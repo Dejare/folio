@@ -1,11 +1,11 @@
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
+import Home from './components/Home/Home';
 import './main.scss'
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <Home/>
   
    
     </Router>
