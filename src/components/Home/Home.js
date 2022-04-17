@@ -11,7 +11,7 @@ const Home = () => {
             <div>
                 <footer>
                     &copy; 2022 <br/>
-                    -WAGMI
+                    -Adejare | Design & Development
                 </footer>
             </div>
     </div>
