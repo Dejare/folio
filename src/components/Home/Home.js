@@ -6,7 +6,7 @@ const Home = () => {
     <div className='home'>
         <Navbar/>
         <div className='hero'><h1>
-            DEJJ
+            //Help
             </h1></div>
             <div>
                 <footer>
