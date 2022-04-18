@@ -52,13 +52,23 @@ nav {
 }
 
 @media screen and (max-width: 960px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .navactive {
         position: fixed;
-        top: 0;
+        top: 10vh;
         height: 100%;
         background: black;
         z-index: 100;
         width: 100%;
+        .close{
+            position: fixed;
+            top: 4.1%;
+            right: 8%;
+        }
         ul {
             margin-left: 0rem;
             display: flex;
@@ -72,7 +82,7 @@ nav {
             display: flex;
             flex-direction: row;
             position: absolute;
-            bottom: 10%;
+            bottom: 15%;
             .icon{
                 margin-right: 1rem;
                 font-size: 1.3rem;
