@@ -1,0 +1,60 @@
+
+.about {
+    position: absolute;
+    top: 20%;
+    // margin-left: 1.5rem;
+    padding: 0rem 1.5rem;
+    font-size: 1rem;
+    .aboutHeading {
+        h1 {
+            color: #ffffff;
+            font-size: 3rem;
+            animation: heading;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            // animation-direction: reverse;
+            transition: 0.5s ease;
+            @media (min-width: 700px) {
+                font-size: 4rem;
+                letter-spacing: 1px;
+                font-weight: 700;
+            }
+        }
+        h1::before {
+            position: absolute;
+            content: "";
+            z-index: 1;
+            transition: opacity 0.5s linear;
+            opacity: 1;
+        }
+    }
+    .aboutImg {
+        img {
+            margin: 1.5rem 0rem;
+            width: 50%;
+            height: 20vh;
+            clip-path: circle();
+            @media (min-width: 700px) {
+                width: 12rem;
+                height: 25vh;
+            }
+        }
+    }
+    .aboutText {
+        p {
+            color: #ffffff;
+            margin: 1.5rem 0rem;
+            @media (min-width: 700px) {
+                margin: 1.5rem 1rem;
+            }
+        }
+        li {
+            color: rgb(190, 190, 190);
+        }
+        a {
+            padding: 1.5rem 0rem;
+            text-decoration: none;
+            color: #00ffba;
+        }
+    }
+}
