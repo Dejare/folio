@@ -12,6 +12,10 @@ nav {
         }
         display: none;
     }
+    @media screen and (max-width: 790px) {
+        left: -100%;
+        transition: all .5s ease;
+    }
     ul {
         display: flex;
         flex-direction: row;
@@ -58,8 +62,10 @@ nav {
         justify-content: space-between;
     }
     .navactive {
+        transition: all .5s ease;
         position: fixed;
         top: 10vh;
+        left: 0%;
         height: 100%;
         background: black;
         z-index: 100;
@@ -70,7 +76,7 @@ nav {
             right: 8%;
         }
         ul {
-            margin-left: 0rem;
+            margin-left: 2rem;
             display: flex;
             flex-direction: column;
             margin-top: 2rem;
@@ -83,6 +89,7 @@ nav {
             flex-direction: row;
             position: absolute;
             bottom: 15%;
+            margin-left: 2rem;
             .icon{
                 margin-right: 1rem;
                 font-size: 1.3rem;
