@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <div className='paragraph'>
                 &copy; 2022 <br/>
-                Dejare- Development.
+                Dejare
             </div>
         </div>
     </div>
