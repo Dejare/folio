@@ -1,0 +1,139 @@
+@import "../../sass/main.scss";
+#project {
+    margin: 4rem;
+}
+.projectCarcCntainer {
+    display: flex;
+    flex-direction: column;
+}
+.projectCard {
+    position: relative;
+    width: 60%;
+    // height: 80vh;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(54px);
+    background: black;
+    margin: 20rem auto;
+    padding: 6rem;
+    border: 1px solid $white;
+    border-radius: 10rem;
+    @media only screen and (max-width: 57em) {
+        width: 70%;
+        border-radius: 6.3rem;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 40em) {
+        width: 75%;
+        border-radius: 6.3rem;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 35em) {
+        width: 80%;
+        border-radius: 6.3rem;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 30em) {
+        padding: 4rem;
+        width: 84%;
+        border-radius: 4.3rem;
+        border-radius: 6.3rem;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 23em) {
+        width: 90%;
+        border-radius: 6.3rem;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 22em) {
+        width: 100%;
+        border-radius: 6.3rem;
+        flex-direction: column;
+    }
+    .left {
+        margin-right: 6rem;
+        h4 {
+            transform: rotate(180deg);
+            writing-mode: tb-rl;
+            font-size: 1.3rem;
+            line-height: 92.4%;
+            letter-spacing: 0.19em;
+            line-height: 120%;
+            text-transform: uppercase;
+        
+        @media only screen and (max-width: 57em) {
+           transform: rotate(360deg);
+           writing-mode: lr-tb;
+           margin-top: 3rem;
+           margin-bottom: 2rem;
+           display: none;
+        }}
+    }
+    .projectContent {
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width: 57em) {
+            flex-direction: column;
+        }
+    }
+    .projectImg {
+        background-size: cover;
+        img {
+            width: 25rem;
+            border-radius: 5rem;
+        }
+        @media only screen and (max-width: 57em) {
+            order: 0;
+            height: 40rem;
+            margin: auto;
+            padding: 2rem;
+        }
+    }
+    .projectText {
+        margin: auto 5rem;
+        h3 {
+            background: linear-gradient(
+                -45deg,
+                $lightblue,
+                $lightpurple,
+                $lightblue,
+                $lightpurple
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+        }
+    }
+    .projectNum {
+        position: absolute;
+        top: -5%;
+        right: -5%;
+    }
+    .socialIcons {
+        margin-top: 10rem;
+        font-size: 1.5em;
+    }
+}
+
+@keyframes hover {
+    from {
+        width: 5%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

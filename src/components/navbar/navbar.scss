@@ -1,3 +1,4 @@
+@import './../..//sass/main.scss';
 header {
     display: flex;
     flex-direction: row;
@@ -28,6 +29,7 @@ nav {
                 // border: 1px solid white;
                 text-transform: capitalize;
                 position: relative;
+                color: $white;
             }
             a::before, a::after{
                 transition: all .5s;
