@@ -7,6 +7,7 @@ header {
     font-weight: 400;
 }
 nav {
+    font-family: $circular;
     .menuIcon {
         @media screen and (max-width: 790px) {
             display: block;
@@ -44,7 +45,7 @@ nav {
                     width: 0%;
                     content: '.';
                     color: transparent;
-                    background: #00a329;
+                    background: $lightpurple;
                     height: 1px;
             }
             a:hover::after{

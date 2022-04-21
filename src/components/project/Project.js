@@ -13,9 +13,9 @@ import weather from '../../image/weather.webp'
 const Project = () => {
   return (
     <div id='project'>
-        <div className='projecttext'>
-            <h2 className='heading-2'>Project -</h2>
-            <p>I have worked on a couple of projects, Here are some of my works.</p>
+        <div>
+            <h2 className='heading-2 mb-s'>Project -</h2>
+            <p className='mb-s p'>I have worked on a couple of projects, Here are some of my works.</p>
             <div className='projectCardContainer'>
                 <Projectcard projectNum={one} Name="Portfolio V1." projectImg={dej} stack="React, SCSS, GSAP"/>
                 <Projectcard  Name="WeatherApp" projectImg={weather} projectNum={two}/>

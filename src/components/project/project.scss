@@ -1,8 +1,11 @@
 @import "../../sass/main.scss";
 #project {
-    margin: 4rem;
+    font-family: $circular;
+    .p{
+        margin-left: 3rem;
+    }
 }
-.projectCarcCntainer {
+.projectCarCntainer {
     display: flex;
     flex-direction: column;
 }
@@ -53,6 +56,7 @@
     .left {
         margin-right: 6rem;
         h4 {
+            
             transform: rotate(180deg);
             writing-mode: tb-rl;
             font-size: 1.3rem;
@@ -92,6 +96,8 @@
     .projectText {
         margin: auto 5rem;
         h3 {
+            font-family: $stylefont;
+            font-size: 3.8rem;
             background: linear-gradient(
                 -45deg,
                 $lightblue,
