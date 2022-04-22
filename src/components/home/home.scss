@@ -1,9 +1,62 @@
+@import "../../sass/main.scss";
 #home {
     height: 100vh;
+    width: 100%;
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    .herotext h1 {
-        
+    flex-direction: row;
+    justify-content: space-between;
+    // font-size: 2rem !important;img{
+
+    .heroImg{
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        @media only screen and (max-width: 57em) {
+            margin: 0 auto;
+        }
+        img{
+            width: 40rem;
+            // height: 50rem;
+        }
+    }
+    .herotext {
+        margin: 5rem;
+        position: absolute;
+        top: 20%;
+        @media only screen and (max-width: 57em) {
+            top: 60%;
+        }
+        p{
+            margin: 0;
+        }
+        .heading-2{
+            background: linear-gradient(
+                -45deg,
+                $lightblue,
+                $lightpurple,
+                $lightblue,
+                $lightpurple
+            );
+            margin: 1rem 0rem;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+        }
+        button{
+            margin-right: 2rem;
+            margin-top: 2rem;
+        }
+       .btn{
+           display: flex;
+           flex-direction: row;
+           margin: 1rem 0rem !important;
+           @media only screen and (max-width: 57em) {
+            flex-direction: column;
+            margin: 2rem 0rem !important;
+        }
+       }
     }
 }

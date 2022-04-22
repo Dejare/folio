@@ -61,9 +61,11 @@ $lightpurple: rgb(207, 89, 230);
     padding: 0;
     box-sizing: inherit;
     // border: solid 2px red;
+
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%; // 10px
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
@@ -155,6 +157,19 @@ section {
     letter-spacing: -1px;
     text-transform: capitalize;
     margin-left: 3rem;
+    background: linear-gradient(
+        -45deg,
+        $lightblue,
+        $lightpurple,
+        $lightblue,
+        $lightpurple
+    );
+    margin: 1rem 3rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
 }
 
 .heading-3 {
@@ -207,8 +222,12 @@ section {
     border: 1.5px solid $white;
     cursor: pointer;
     transition: all .3s ease-in-out;
+   
     &:hover {
-        background-color: $primary-color;
+        background: linear-gradient(
+            -45deg,
+            $lightblue,
+            $lightpurple);
         border: 1.5px solid $white;
         color: $black;
     }

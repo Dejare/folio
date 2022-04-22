@@ -1,13 +1,37 @@
-import React from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import React, {useEffect, useRef} from "react";
 import "../../sass/main.scss";
 import "./about.scss";
 const About = () => {
+    gsap.registerPlugin(ScrollTrigger)
+    const about = useRef()
+    const ref = useRef(null)
+    const element = ref.current;
+    useEffect(() => {
+ 
+        gsap.fromTo(about.current, {
+            y: 100,
+            opacity: 0
+        }, {
+            y:0,
+            opacity:1,
+            scrollTrigger :{
+                trigger: element,
+                start: "top top",
+                end: "bottom center",
+                scrub: true
+            }
+        })
+    }, [])
+
+
     return (
-        <div id="about">
-            <h3 className="heading-3 mb-m section-head">About -</h3>
+        <div id="about" ref={ref}>
+            <h3 className="heading-2 mb-m section-head">About -</h3>
             <div className="aboutContainer">
                 <div className="aboutme">
-                    <p>
+                    <p ref={about} className="potter">
                         I am Adejare, a frontend developer based in Lagos,
                         Nigeria focused on creating interactive and immersive
                         digital experiences on the web. I'm currently a student
