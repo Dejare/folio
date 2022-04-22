@@ -17,6 +17,11 @@
         }
         img{
             width: 40rem;
+            @media only screen and (max-width: 57em) {
+                display: flex;
+                width: 30rem;
+                margin: 0 auto;
+            }
             // height: 50rem;
         }
     }
@@ -25,7 +30,7 @@
         position: absolute;
         top: 20%;
         @media only screen and (max-width: 57em) {
-            top: 60%;
+            top: 50%;
         }
         p{
             margin: 0;
