@@ -18,6 +18,13 @@ const Navbar = () => {
         if (x.matches) {
             nav.current.style.display = "none";
         }
+        else{
+            
+        }
+    }
+    function open() {
+        nav.current.style.display = "block";
+        setclick(!click)
     }
     const x = window.matchMedia("(max-width: 56.25em");
     return (
@@ -47,7 +54,7 @@ const Navbar = () => {
                         {click ? (
                             <FaTimes className="close" />
                         ) : (
-                            <BiMenuAltRight className="menuIcon" />
+                            <BiMenuAltRight className="menuIcon" onClick={open}/>
                         )}
                     </div>
             </header>
