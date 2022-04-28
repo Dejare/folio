@@ -4,8 +4,11 @@ import "./home.scss";
 import dejj from '../../image/dej.webp'
 
 const Home = () => {
-    return (
+// write a landing page component
+       return (
         <div id="home">
+
+
           <div className="heroImg">
             <img src={dejj}/>
           </div>
