@@ -31,7 +31,7 @@ const Projectcard = ({projectNum, Name, projectImg, stack}) => {
             </div>
             <div className='projectText'>
                 <h3 className='mb-m heading-3'>{Name}</h3>
-                <a>Visit Site</a>
+                <a href=''>Visit Site</a>
                 <div className='socialIcons'>
                     <AiFillBehanceSquare/>
                     <AiFillGithub/>

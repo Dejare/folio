@@ -56,13 +56,14 @@
     .left {
         margin-right: 6rem;
         h4 {
-            
+            text-transform: capitalize !important;
             transform: rotate(180deg);
             writing-mode: tb-rl;
             font-size: 1.3rem;
             line-height: 92.4%;
             letter-spacing: 0.19em;
             line-height: 120%;
+            font-family: 'Calibre-Regular' !important;
             text-transform: uppercase;
         
         @media only screen and (max-width: 57em) {

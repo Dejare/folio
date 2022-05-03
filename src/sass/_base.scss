@@ -89,19 +89,19 @@ html {
     height: 100%;
     
     @media only screen and (max-width: 62.5em) { // tab-land
-        font-size: 56.25%;
+        font-size: 75.25%;
     }
     
     @media only screen and (max-width: 56.25em) { // tab-port
-        font-size: 54%; 
+        font-size: 75%; 
     }
 
     @media only screen and (max-width: 37.5em) { // phone
-        font-size: 51%; 
+        font-size: 81%; 
     }
     
     @media only screen and (min-width: 112.5em) { // big desktop
-        font-size: 75%; // 1rem = 12px, 12/16 = 75
+        font-size: 95%; // 1rem = 12px, 12/16 = 75
     }
     
 }
@@ -268,6 +268,9 @@ section {
 .mt-s {
     margin-top: 1rem;
 }
+.mt-l {
+    margin-top: 4rem;
+}
 
 
 // Link
@@ -313,4 +316,175 @@ a:hover::after{
         $lightpurple,
         $lightblue,
         $lightpurple);
+}
+
+
+// home anim
+
+
+.square{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid purple;
+    animation: squareAnim;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border: 3px solid #00ffba;
+    border-radius: 50%;
+    background: #00ffba;
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    animation: circleAnim;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+    transition: 1s ease;
+}
+.triangle{
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #0062ff;
+    border-bottom: 15px solid transparent;
+    animation: triangle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+}
+.bottomleft{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    z-index: -1;
+    animation: botttomleft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: .2s all;
+    .smaller{
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        background: #0062ff;
+        z-index: 1;
+        animation: botttomleftsmaller;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+.bigCircle{
+    // display: none;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 8px solid crimson;
+    border-radius: 50%;
+    bottom: 30%;
+    left: 30%;
+    animation: bigCircle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    @media (min-width: 700px) {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 15px solid crimson;
+        border-radius: 50%;
+        bottom: 30%;
+        left: 30%;
+        animation: bigCircle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @media (max-width: 700px) {
+        display: none;
+    }
+}
+
+@keyframes circleAnim {
+    0%{
+        opacity: 1;
+        // transform: translateX(-40px);
+    }
+    50%{
+        opacity: 0;
+    }
+    71%{
+        opacity: 1;
+        // transform: translateX(40px);
+    }
+}
+
+@keyframes botttomleftsmaller {
+    from{
+        background: #0062ff;
+    }
+    to{
+        background: #f50057;
+    }
+}
+
+@keyframes squareAnim {
+    0%{
+        display: block;
+    }
+    50%{
+        transform: rotate(65deg);
+    }
+    90%{
+        opacity: 0;
+    }
+}
+
+@keyframes triangle {
+    0%{
+        display: block;
+    }
+    50%{
+        transform: rotate(65deg);
+    }
+    90%{
+        opacity: 0;
+    }
+}
+@keyframes bigCircle {
+    0%{
+
+    }  
+    25%{
+        transform: translateX(-50px);
+    } 
+    50%{
+        transform: translateY(-70px);
+    }
+}
+
+@keyframes botttomleft {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-30px);
+    }
 }

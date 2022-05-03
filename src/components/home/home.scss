@@ -1,71 +1,68 @@
 @import "../../sass/main.scss";
 #home {
-    height: 100vh;
+    min-height: 95vh;
     width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-family: $coolvetica !important;
-    // font-size: 2rem !important;img{
-
-    .heroImg{
+    .homeTexts{
         position: absolute;
-        right: 5%;
-        top: 10%;
-        @media only screen and (max-width: 57em) {
-            margin: 0 auto;
-        }
-        img{
-            width: 40rem;
-            @media only screen and (max-width: 57em) {
-                display: flex;
-                width: 30rem;
-                margin: 0 auto;
-            }
-            // height: 50rem;
-        }
-    }
-    .herotext {
-        margin: 5rem;
-        position: absolute;
-        top: 20%;
-        font-family: $coolvetica !important;
-        @media only screen and (max-width: 57em) {
-            top: 50%;
-        }
-        p{
+        top: 30%;
+        text-align: left;
+        margin-left: 3rem;
+        max-width: 100%;
+        @media (min-width: 700px) {
+            width: 100%;
+            top: 30%;
+            // left: 50%;
+            text-align: center;
             margin: 0;
         }
-        .heading-2{
-            background: linear-gradient(
-                -45deg,
-                $lightblue,
-                $lightpurple,
-                $lightblue,
-                $lightpurple
-            );
-            margin: 1rem 0rem;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 400% 400%;
-            animation: gradient 3s ease infinite;
-            font-family: $coolvetica !important;
-            letter-spacing: 10px;
+        h3{
+            color: #868f97;
+            // font-size: 4rem;
+            letter-spacing: 2px;
+            @media (min-width: 700px) {
+                font-size: 1rem;
+                letter-spacing: 5px;
+            }
         }
-        button{
-            margin-right: 2rem;
-            margin-top: 2rem;
+        h1{
+            color: white;
+            font-size: 5rem;
+            margin: 2rem 0rem;
+            font-weight: 700;
+            line-height: 1.25;
+            @media (min-width: 700px) {
+                // width: 80%;
+                font-size: 4.5rem;
+                letter-spacing: 2px;
+            }
         }
-       .btn{
-           display: flex;
-           flex-direction: row;
-           margin: 1rem 0rem !important;
-           @media only screen and (max-width: 57em) {
-            flex-direction: column;
-            margin: 2rem 0rem !important;
+        .homeCta{
+            color: white;
+            @media (min-width: 700px) {
+                font-size: 1rem;
+            }
         }
-       }
-    }
-}
+        .homeAbout{
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: 800;
+            color: #00ffba;
+            @media (min-width: 700px) {
+                font-size: 1.2rem;
+            }
+        }
+        .homeProjects{
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: 800;
+            color: #d62802;
+            @media (min-width: 700px) {
+                font-size: 1.2rem;
+            }
+        }
+}}

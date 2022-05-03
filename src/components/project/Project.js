@@ -18,9 +18,9 @@ const Project = () => {
             <p className='mb-s p'>I have worked on a couple of projects, Here are some of my works.</p>
             <div className='projectCardContainer'>
                 <Projectcard projectNum={one} Name="Portfolio V1." projectImg={dej} stack="React, SCSS, GSAP"/>
-                <Projectcard  Name="WeatherApp" projectImg={weather} projectNum={two}/>
-                <Projectcard Name="Gif-Zone" projectNum={three} projectImg={pexel}/>
-                <Projectcard Name="Jiggy Life!" projectNum={four} projectImg={test} />
+                <Projectcard  Name="WeatherApp" projectImg={weather} projectNum={two} stack= "HTML CSS API's Javascript"/>
+                <Projectcard Name="Gif-Zone" projectNum={three} projectImg={pexel} stack = "REACT API'S GSAP Routers"/>
+                <Projectcard Name="Jiggy Life!" projectNum={four} projectImg={test} stack="HTML, SCSS, Javascript" />
             </div>
         </div>
     </div>
